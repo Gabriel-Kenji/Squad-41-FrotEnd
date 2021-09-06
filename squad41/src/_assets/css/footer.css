@@ -72,12 +72,14 @@ footer {
 }
 
 @media (max-width: 1024px) {
+  
 }
 @media (max-width: 952px) {
+  
 }
 
 @media (max-width: 858px) {
-}
+  
 
 @media (max-width: 768px) {
   .btn-logar-footer {
@@ -88,9 +90,11 @@ footer {
     text-align: center;
     padding-left: 10%;
   }
+  }
 }
 
 @media (max-width: 575px) {
+  
   .logar-footer {
     display: none;
   }
@@ -111,15 +115,19 @@ footer {
     margin: 0 auto;
   }
   footer {
-    height: 235px;
+    height: 245px;
   }
 }
-
-@media (max-width: 375px) {
+@media (max-width: 469px) {
+  
 }
 
-@media (max-width: 320px) {
+@media (max-width: 438px) {
+  
+}
+
+@media (max-width: 340px) {
   footer {
-    height: 220px;
+    height: 255px;
   }
 }

@@ -50,7 +50,12 @@ h6 {
   line-height: 21px;
 }
 
+.row{
+    height: 500;
+}
+
 .calendario-inicial {
+margin-top: 100px;
   height: 100%;
   width: 100%;
   text-align: left;
@@ -103,8 +108,13 @@ height: 80%;
 }
 
 @media (max-width: 1024px) {
+
+
 }
 @media (max-width: 952px) {
+    .calendario-inicial{
+        margin-top: 50px;
+    }
     .imagem-calendario-inicial {
         width: 90%;
         height: 70%;
@@ -129,6 +139,9 @@ height: 80%;
 }
 
 @media (max-width: 768px) {
+    .calendario-inicial{
+        margin-top: 0px;
+    }
 }
 
 @media (max-width: 575px) {
