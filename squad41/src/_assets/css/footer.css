@@ -20,8 +20,8 @@ footer {
   padding: 0;
   width: 100%;
   position: relative;
-    bottom: 0;
-    left: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .row {
@@ -71,77 +71,55 @@ footer {
   color: white;
 }
 
-
-
 @media (max-width: 1024px) {
-   
-
- 
 }
 @media (max-width: 952px) {
-  
-
-  
-  
-  
 }
 
 @media (max-width: 858px) {
-  
-  
 }
 
-  @media (max-width: 768px) {
-    .btn-logar-footer {
-      width: 80%;
-    }
-    
-    .copyright{
-      text-align: center;
-      padding-left: 10%;
-    }
-
-    
-    
+@media (max-width: 768px) {
+  .btn-logar-footer {
+    width: 80%;
   }
 
-  @media (max-width: 575px) {
-    .logar-footer {
-      display: none;
-    }
-    .logos-footer{
-      
-      padding-left: 0;
-    }
-    .logos-footer a{
-      height: 100%;
-      margin: 0 auto;
-    }
-    .logofcamara-footer {
-      
-      padding: 0;
-    }
+  .copyright {
+    text-align: center;
+    padding-left: 10%;
+  }
+}
 
-    .copyright{
-      text-align: center;
-      padding-left: 0%;
-      margin: 0 auto;
-    }
-    footer{
-      height: 235px;
-    }
+@media (max-width: 575px) {
+  .logar-footer {
+    display: none;
+  }
+  .logos-footer {
+    padding-left: 0;
+  }
+  .logos-footer a {
+    height: 100%;
+    margin: 0 auto;
+  }
+  .logofcamara-footer {
+    padding: 0;
   }
 
-  @media (max-width: 375px) {
-    
+  .copyright {
+    text-align: center;
+    padding-left: 0%;
+    margin: 0 auto;
   }
-
-  @media (max-width: 320px) {
-   
-    footer{
-      height: 220px;
-    }
-    
+  footer {
+    height: 235px;
   }
+}
 
+@media (max-width: 375px) {
+}
 
+@media (max-width: 320px) {
+  footer {
+    height: 220px;
+  }
+}
