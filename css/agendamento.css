@@ -1,0 +1,57 @@
+@font-face {
+  font-family: Metropolis;
+  src: url(../fonts/Metropolis-Regular.otf);
+}
+
+h1 {
+  font-family: Metropolis;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 39px;
+}
+
+h2 {
+  font-family: Metropolis;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 59px;
+}
+
+h3 {
+  font-family: Metropolis;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+}
+
+h4 {
+  font-family: Metropolis;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 39px;
+}
+
+h5 {
+  font-family: Metropolis;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+}
+h6 {
+  font-family: Metropolis;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.form-control {
+  width: 80px;
+  display: inline-block;
+}
+
