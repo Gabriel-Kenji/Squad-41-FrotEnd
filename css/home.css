@@ -1,0 +1,177 @@
+@font-face {
+  font-family: Metropolis;
+  src: url(../fonts/Metropolis-Regular.otf);
+}
+
+h1 {
+  font-family: Metropolis;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 39px;
+}
+
+h2 {
+  font-family: Metropolis;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 59px;
+}
+
+h3 {
+  font-family: Metropolis;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+}
+
+h4 {
+  font-family: Metropolis;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 39px;
+}
+
+h5 {
+  font-family: Metropolis;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+}
+h6 {
+  font-family: Metropolis;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.row{
+    height: 500;
+}
+
+.calendario-inicial {
+margin: 70px 0;
+  height: 100%;
+  width: 100%;
+  text-align: left;
+}
+.imagem-calendario-inicial {
+width: 90%;
+height: 80%;
+  margin-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  max-width: 100%;
+}
+
+.texto_calendario-inicial {
+  color: #000;
+  margin-top: 80px;
+  padding-left: 8%;
+}
+
+.titulo-calendario-inicial {
+  padding-right: 15%;
+  margin-bottom: 30px;
+  color: #fe5517;
+}
+
+.calendario-inicial p {
+  padding-right: 12%;
+  font-family: Metropolis;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+
+  line-height: 21px;
+}
+
+.link-perfil {
+  margin-top: 40px;
+  font-family: Metropolis;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+}
+.link-perfil a {
+  color: #fe5517;
+  text-decoration-line: underline;
+}
+.fcamara {
+  color: #fe5517;
+}
+
+
+
+@media (max-width: 1024px) {
+
+
+}
+@media (max-width: 952px) {
+    .calendario-inicial{
+        margin-top: 50px;
+    }
+    .imagem-calendario-inicial {
+        width: 90%;
+        height: 70%;
+        margin-left: 0%;
+        margin-top: 20%;
+        max-width: 100%;
+        max-height: 100%;
+      }
+}
+
+@media (max-width: 858px) {
+
+    .imagem-calendario-inicial {
+        width: 90%;
+        height: 60%;
+        margin-left: 0%;
+        margin-top: 30%;
+        margin-bottom: 0;
+        max-width: 100%;
+        max-height: 100%;
+      }
+      .texto_calendario-inicial {
+        padding-left: 2%;
+      }
+      
+    .titulo-calendario-inicial {
+      padding-right: 2%;
+    }
+  
+}
+
+@media (max-width: 768px) {
+    .calendario-inicial{
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 575px) {
+  .texto_calendario-inicial {
+    margin-top: 0px;
+  }
+    .imagem-calendario-inicial {
+        width: 90%;
+        height: 85%;
+        margin-left: 0%;
+        margin-top: 5%;
+        padding-bottom: 5%;
+        max-width: 100%;
+        max-height: 100%;
+      }
+}
+
+@media (max-width: 375px) {
+}
+
+@media (max-width: 320px) {
+}

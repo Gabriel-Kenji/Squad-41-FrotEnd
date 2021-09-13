@@ -1,0 +1,33 @@
+button {
+  height: 48px;
+  width: 174px;
+  border-radius: 4px;
+}
+.btn_login {
+  background: #36357e;
+  border: 1px solid #d4d4d4;
+  box-sizing: border-box;
+  color: #fff;
+  transition: 0.3s;
+}
+.btn_login:hover {
+  background: #fe662e;
+  color: #fff;
+}
+nav {
+  height: 165px;
+  width: 100%;
+  background-color: #fe4400;
+}
+
+
+@media (max-width: 414px) {
+  nav {
+    height: 185px;
+  }
+  .btn_login {
+    width: 120px;
+  }
+}
+
+
