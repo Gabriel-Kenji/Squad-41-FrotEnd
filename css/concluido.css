@@ -1,0 +1,23 @@
+.container{
+    text-align: center;
+    padding-top: 20%;
+}
+.ok button{
+    width: 285px;
+    height: 48px;
+    color: #fff;
+    border: 0;
+    background: #404B5A;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    transition: 0.3s;
+  }
+  
+  .ok button:hover{
+    background: #394250;
+  }
+
+  .erro{
+    color: rgb(253, 75, 75);
+  }

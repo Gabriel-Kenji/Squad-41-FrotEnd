@@ -236,6 +236,12 @@ table{
   height: 180px;
 }
 
+.erro{
+  color: red;
+  font-weight: bold;
+  width: 100%;
+  margin-top: 20px;
+}
 
 
 @media (max-width: 1024px) {

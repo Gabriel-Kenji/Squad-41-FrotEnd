@@ -121,7 +121,7 @@ axios
     </div>
     <div class="col-md-12 botao_avancar" id="avancar">
 
-      <button onclick="Agendar()">Confirmar agendamento</button>
+      <button onclick="Finalizar()">Confirmar agendamento</button>
 
     </div>
           `;
@@ -185,7 +185,7 @@ axios
     </div>
     <div class="col-md-12 botao_avancar" id="avancar">
 
-      <button onclick="Agendar()">Confirmar agendamento</button>
+      <button onclick="Finalizar()">Confirmar agendamento</button>
     </div>
           `;
     }
@@ -196,3 +196,23 @@ axios
           
       `;
   });
+
+  function Finalizar(){
+
+    dados = {
+        id: 4,
+        date: data.date,
+        estacaoId:1,
+        entrada: data.entrada,
+        saida: data.saida
+    }
+    alert(dados.id)
+    axios
+    .post("http://localhost:5000/agendamentos/",dados )
+    .then((response) => {
+        window.location.href = `concluido.html?status=${response.status}`;
+    }).catch(err=>{
+        window.location.href = `concluido.html?status=${err.response.status}`;
+    })
+   
+  }
