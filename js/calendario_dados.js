@@ -200,7 +200,7 @@ function DIA(data,sede) {
       })
 
       
-      var total = 3
+      var total = agendamentos.quant
 
       
       var ocupados = total - livres

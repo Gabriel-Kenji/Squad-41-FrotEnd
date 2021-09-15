@@ -1,29 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/navbar.css" />
-    <link rel="stylesheet" href="css/confirmacao.css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/confirmacao.css" />
 </head>
+
 <body>
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
       <ul class="nav navbar-nav pull-sm-left voltar">
-        <li class="nav-item">
-          <img
-          alt=""
-          src="img/Vector.png"
-          className="d-inline-block align-top "
-          />
+        <li class="nav-item" id="voltar_nav">
+          <img alt="" src="img/Vector.png" className="d-inline-block align-top " />
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-logo mx-auto">
@@ -31,34 +25,147 @@
           <h1 class="titulo">Confirmar</a>
         </li>
       </ul>
-      
+
     </div>
   </nav>
-    <div class="container" id="finalizacao">
-      <div class="row mb-2 calendario-inicial">
-        <div class="col-md-6 texto_calendario-inicial" id="vaga">
-          
-         
-        </div>
-        <div class="col-md-6 texto_calendario-inicial" id="vaga">
-            
-           
-        </div>
-      </div>
-      
-    </div>
-    
+  <div class="container confirmacao-inicial" id="finalizacao">
+    <div class="row mb-2 calendario-inicial">
+      <div class="col-md-6 sede" id="vaga">
+        <div
+          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col-auto d-none d-lg-block">
+            <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img"
+              aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#55595c" />
+              <text x="50%" y="50%" fill="#eceeef" dy=".3em">Santos</text>
+            </svg>
 
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/confirmacao.js"></script>
+          </div>
+          <div class="col p-4 d-flex flex-column position-static">
+            <h3 class="mb-0">Santos</h3>
+            <p class="card-text mb-auto">${
+              agendamentos.quant - livres
+              }/${agendamentos.quant}</p>
+          </div>
+
+        </div>
+
+        <table>
+          <tr>
+            <td><img src='img/calendario.png' /></td>
+            <td> </td>
+            <td> </td>
+            <td> Você está agendando para: <b>${
+                arruma_data[2]
+                } de ${mes} de ${arruma_data[0]} </b></td>
+          </tr>
+
+        </table>
+        <br>
+        <table>
+          <tr>
+            <td><img src='img/relogio.png' /></td>
+            <td> </td>
+            <td> </td>
+            <td> Horário:
+              das <b>${data.entrada}</b> às <b>${data.saida} </b></td>
+          </tr>
+
+        </table>
+
+      </div>
+      <div class=" col-md-6 texto_calendario-inicial" id="vaga">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3646.034693960299!2d-46.33343908501456!3d-23.9592132844868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce030c4b240a97%3A0x9a30518492646e10!2sPr%C3%A7.%20dos%20Expedicion%C3%A1rios%2C%2019%20-%202%C2%BA%20andar%20-%20Gonzaga%2C%20Santos%20-%20SP%2C%2011065-500!5e0!3m2!1spt-BR!2sbr!4v1631676002886!5m2!1spt-BR!2sbr"
+          class="mapa" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <br><br>
+        <p><b>Endereço:</b></p>
+        <p>Praça Dos Expedicionários, 19 2º andar Gonzaga, Santos - SP</p>
+      </div>
+    </div>
+    <div class="col-md-12 botao_avancar" id="avancar">
+
+      <button onclick="Agendar()">Avançar</button>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="row mb-2 calendario-inicial">
+      <div class="col-md-6 sede" id="vaga">
+        <div
+          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col-auto d-none d-lg-block ">
+            <div class="imagem-sede">
+            </div>
+          </div>
+          <div class="col p-4 d-flex flex-column position-static">
+            <h3 class="mb-5">São Paulo</h3>
+            <p class="card-text mb-auto">${
+              agendamentos.quant - livres
+              }/${agendamentos.quant}</p>
+          </div>
+
+        </div>
+        <table>
+          <tr>
+            <td><img src='img/calendario.png' /></td>
+            <td> </td>
+            <td> </td>
+            <td> Você está agendando para: <b>${
+                arruma_data[2]
+                } de ${mes} de ${arruma_data[0]} </b></td>
+          </tr>
+
+        </table>
+        <br>
+        <table>
+          <tr>
+            <td><img src='img/relogio.png' /></td>
+            <td> </td>
+            <td> </td>
+            <td> Horário:
+              das <b>${data.entrada}</b> às <b>${data.saida} </b></td>
+          </tr>
+
+        </table>
+      </div>
+      <div class="col-md-6 texto_calendario-inicial" id="vaga">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.3571828787276!2d-46.66357918502235!3d-23.555611884685714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce582d7a8f2451%3A0x2df5a2e09a20b779!2sR.%20Bela%20Cintra%2C%20986%20-%202%C2%BA%20andar%20-%20Consola%C3%A7%C3%A3o%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001415-002!5e0!3m2!1spt-BR!2sbr!4v1631675948201!5m2!1spt-BR!2sbr"
+          class="mapa" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <br><br>
+        <p><b>Endereço:</b></p>
+        <p>Rua Bela Cintra, 986 - 2º andar Consolação, São Paulo - SP</p>
+      </div>
+    </div>
+    <div class="col-md-12 botao_avancar" id="avancar">
+
+      <button onclick="Agendar()">Avançar</button>
+
+    </div>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+  </script>
+  <script src="js/confirmacao.js"></script>
 </body>
+
 </html>
