@@ -15,19 +15,14 @@ button {
   color: #fff;
 }
 nav {
-  height:100px;
+  height: 144px;
   width: 100%;
   background-color: #fe4400;
 }
 
-
-@media (max-width: 414px) {
-  nav {
-    height: 185px;
-  }
-  .btn_login {
-    width: 120px;
-  }
+.voltar{
+  position: absolute;
 }
+
 
 

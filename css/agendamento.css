@@ -3,6 +3,8 @@
   src: url(../fonts/Metropolis-Regular.otf);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 h1 {
   font-family: Metropolis;
   font-style: normal;
@@ -51,7 +53,271 @@ h6 {
 }
 
 .form-control {
-  width: 80px;
-  display: inline-block;
+  width: 174px;
 }
 
+.modal-body .botoes{
+  text-align: center;
+}
+
+.titulo{
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 39px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+
+
+
+.fc .fc-button-primary {
+  color: #000;
+  background-color: var(--fc-button-bg-color, #e0e5eb00);
+  border: #E0E5EB;
+}
+
+.fc .fc-button-primary:hover {
+  color: #000;
+  background-color: var(--fc-button-bg-color, #d1d6db00);
+  border: #E0E5EB;
+}
+.fc .fc-button-primary:not(:disabled):active, .fc .fc-button-primary:not(:disabled).fc-button-activee {
+  color: #000;
+  background-color: var(--fc-button-bg-color, #e0e5eb00);
+  border: #E0E5EB;
+}
+
+
+#calendar-container {
+
+  left: 0;
+  margin: 0 auto;
+  right: 0;
+  width: 340px;
+  background-color: #E0E5EB;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.row{
+  height: 600px;
+}
+
+
+
+.fc .fc-toolbar-title{
+  font-size: 15px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:hover {
+  color: #000;
+  background-color: transparent;
+}
+
+.fc .fc-daygrid-day.fc-day-today{
+  background-color: #E0E5EB;
+}
+
+table{
+  background-color: #E0E5EB;
+}
+
+.calendario-inicial{
+  padding-top: 20px;
+}
+
+.botao_avancar{
+  text-align: center;
+  
+}
+
+.botao_avancar button{
+  width: 160px;
+  height: 60px;
+  color: #fff;
+  border: 0;
+  background: #404B5A;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  transition: 0.3s;
+}
+
+.botao_avancar button:hover{
+  background: #394250;
+}
+
+
+.titulo-calendario-inicial{
+  margin-bottom: 50px;
+}
+
+.texto_calendario-inicial{
+  text-align: center;
+  width: 100%;
+  margin-top: 50px;
+  
+}
+
+.imagem-calendario-inicial{
+  margin: 20px;
+}
+
+
+.titulo-horario{
+  margin-bottom: 70px;
+  width: 100%;
+}
+
+.horario-button{
+  width: 100px;
+  height: 50px;
+  margin:  0 auto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+  /* identical to box height */
+  
+  text-align: center;
+  background: #CCD2DB;
+  border-radius: 10px;
+}
+
+.horarios{
+  height: auto;
+  margin-bottom: 71px;
+}
+
+.horario{
+  margin-top: 10px;
+}
+
+.quantidade{
+  width: 340px;
+  height: 140px;
+  margin:  0 auto;
+  background: #CCD2DB;
+  border-radius: 10px;
+  text-align: center;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.ocupacao{
+  margin-top: 30px;
+}
+
+.Entrada{
+  padding-left: 100px;
+}
+
+.Saida{
+  padding-right: 100px;
+}
+
+.row .quantidades{
+  height: 180px;
+}
+
+
+
+@media (max-width: 1024px) {
+
+
+}
+@media (max-width: 952px) {
+  .Entrada{
+    padding-left: 50px;
+  }
+  
+  .Saida{
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 858px) {
+
+}
+
+@media (max-width: 768px) {
+  .Entrada{
+    padding-left: 0px;
+    margin-bottom: 55px;
+  }
+  
+  .Saida{
+    padding-right: 30px;
+  }
+
+  
+}
+
+@media (max-width: 575px) {
+  .Entrada{
+    padding-left: 0px;
+  }
+  
+  .Saida{
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 475px) {
+  .Entrada{
+    padding-left: 0px;
+  }
+  
+  .Saida{
+    padding-right: 30px;
+  }
+
+  .quantidade{
+    width: 300px;
+  }
+
+  #calendar-container {
+    width: 300px;
+  }
+}
+
+@media (max-width: 475px) {
+
+
+  .Entrada{
+    padding-left: 0px;
+  }
+  
+  .Saida{
+    padding-right: 30px;
+  }
+  .quantidade{
+    width: 250px;
+    height: 160px;
+    margin-bottom: 10px;
+  }
+
+  .ocupacao{
+    margin-top: 10px;
+  }
+
+  #calendar-container {
+    width: 250px;
+  }
+}
