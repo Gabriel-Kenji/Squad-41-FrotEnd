@@ -41,6 +41,11 @@ if(h1[0]<=h2[0]){
 }
 
 function DIA(data,sede) {
+
+  var modal = document.getElementById("vaga");
+  modal.innerHTML = `<div class="mt-5">
+                      <img src="img/loading-buffering.gif" alt="">
+                    </div>`;
   axios
     .get("http://localhost:5000/agendamentos/"+data+"/"+ sede )
     .then((response) => {
