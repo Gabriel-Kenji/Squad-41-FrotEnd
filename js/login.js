@@ -13,14 +13,13 @@ function Login(){
 
     var erro =  document.getElementById("erro")
 
-    axios.post("http://localhost:5000/auth",{email,password}).then(res =>{
+    axios.post("http://localhost:5000/login",{email,password}).then(res =>{
         var token = res.data.token
         var id = res.data.id
         localStorage.setItem("token", token)
         axiosConfig.headers.Authorization = "Bearer " + localStorage.getItem("token")
         sessionStorage.setItem('id', id);
         window.location.href = "sedes.html";
-        alert("logado com sucesso!")
     }).catch(err =>{
         erro.innerHTML = `<p>E-mail ou senha incorreto</p>`
         alert(err)

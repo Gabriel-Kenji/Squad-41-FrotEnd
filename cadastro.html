@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SCRIPT -->
+    <title>Login Form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <script src="https://kit.fontawesome.com/b32b4293bb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/login.css">
+    
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-5">
+
+
+                
+                <div class="login">
+                    
+                    <div class="titulo"><h1><b>LOGO</b></h1>
+                        <h5 class="mt-4">Agende seu dia de trabalho em um<br>
+                            dos escritórios FCamara </h5>
+                    </div>
+                    <div class="mt-5 form">
+                        <h2>Faça seu Login</h2>
+                        <div class="form-group ">
+                            <div class="input-icons mt-3">
+                                <i class="far fa-user icon"></i>
+                                <input class="input-field form-login"  type="text" placeholder="Nome" id="name">
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <div class="input-icons mt-3">
+                                <i class="fas fa-envelope icon"></i>
+                                <input class="input-field form-login"  type="email" placeholder="E-mail" id="email">
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <div class="input-icons mt-3">
+                                <i class="fas fa-lock icon"></i>
+                                <input class="input-field form-login"  type="password" placeholder="Senha" id="password">
+                            </div>
+                        </div>
+
+                        <div id="erro">
+
+                        </div>
+                        
+                        <button  onclick="Cadastro()" class="btn btn-Login mt-4">Entrar</button>
+                    </div>
+
+                </div>
+                
+            </div>
+            <div class="col-md-7 imagem">
+                <img src="img/office_gray.png" alt="">
+            </div>
+        </div>
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>  
+<script src="js/cadastro.js"></script>
+</body>
+</html>
