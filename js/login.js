@@ -13,7 +13,7 @@ function Login(){
 
     var erro =  document.getElementById("erro")
 
-    axios.post("http://localhost:5000/login",{email,password}).then(res =>{
+    axios.post("http://localhost:50000/login",{email,password}).then(res =>{
         var token = res.data.token
         var id = res.data.id
         localStorage.setItem("token", token)
@@ -22,6 +22,5 @@ function Login(){
         window.location.href = "sedes.html";
     }).catch(err =>{
         erro.innerHTML = `<p>E-mail ou senha incorreto</p>`
-        alert(err)
     })
 }

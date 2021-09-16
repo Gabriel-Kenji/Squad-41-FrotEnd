@@ -34,6 +34,28 @@ a:hover{
     text-align: center;
 }
 
+.nome{
+    color: #FE551A;
+    ;
+}
+
+.sedes{
+    background-color: #36357E;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.nome_sede{
+    color: #FE551A;
+}
+
+.nomes{
+    color: #fff;
+}
+
+.nomes:hover{
+    color: #fff;
+}
 @media (max-width: 991px) {
     .imagem-sede img{
         width: 100%; 

@@ -3,7 +3,7 @@ if(session != undefined){
   token = localStorage.getItem("token")
   if(token != undefined)
   {
-    axios.post("http://localhost:5000/auth",{token}).then(res =>{
+    axios.post("http://localhost:50000/auth",{token}).then(res =>{
     }).catch(err =>{
         window.location.href = "index.html";
     })
@@ -43,13 +43,19 @@ if(data.status == 403){
 
 
 if(data.status == 200){
+
+    if(  parseInt(data.sede) == 1){
+      sede = "São Paulo"
+    }else if(parseInt(data.sede) == 2){
+      sede = "Santos"
+    }
     corpo = document.getElementById("corpo")
 
     corpo.innerHTML = `<img src="img/Stroke-1.png" alt="">
     <br><br>
     <h2>Agendamento <br> concluído com<br> sucesso</h2>
     <br>
-    <h4>Esperamos você em nosso <br> escritório de <br> <b>São Paulo</b> </h4>
+    <h4>Esperamos você em nosso <br> escritório de <br> <b class="sede">${sede}</b> </h4>
     <a href="sedes.html" class="ok mt-4"><button>OK</button>   </a>`
 }
 

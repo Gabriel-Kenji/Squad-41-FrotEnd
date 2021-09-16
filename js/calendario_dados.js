@@ -1,15 +1,17 @@
 session = sessionStorage.getItem('id')
 if(session != undefined){
+  
   token = localStorage.getItem("token")
   if(token != undefined)
-  {
-    axios.post("http://localhost:5000/auth",{token}).then(res =>{
+  { 
+    axios.post("http://localhost:50000/auth",{token}).then(res =>{
     }).catch(err =>{
         window.location.href = "index.html";
     })
   }else{
     window.location.href = "index.html";
   }
+  
 }else{
   localStorage.removeItem("token")
   window.location.href = "index.html";
@@ -74,7 +76,7 @@ function DIA(data,sede) {
                       <img src="img/loading-buffering.gif" alt="">
                     </div>`;
   axios
-    .get("http://localhost:5000/agendamentos/"+data+"/"+ sede ,axiosConfig)
+    .get("http://localhost:50000/agendamentos/"+data+"/"+ sede ,axiosConfig)
     .then((response) => {
       var agendamentos = response.data;
       
@@ -232,14 +234,14 @@ function DIA(data,sede) {
         </form>
         <div class="row quantidades">
           <div class="col-md-12 quantidade">
-            <label class="ocupacao"><b>${ocupados}</b> pessoas já agendaram </br>
+            <label class="ocupacao"><b class="num">${ocupados}</b> pessoas já agendaram </br>
               para esse dia , </br>
-              restam <b>${total - ocupados}</b> vagas</label>
+              restam <b class="num">${total - ocupados}</b> vagas</label>
           </div>
         </div>
         `;
 
-        avancar.innerHTML=`<button onclick="Agendar()">Avançar</button>`
+        avancar.innerHTML=`<button onclick="Agendar()">Agendar agora</button>`
         
         }
        

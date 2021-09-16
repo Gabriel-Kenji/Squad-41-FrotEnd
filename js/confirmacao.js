@@ -3,7 +3,7 @@ if(session != undefined){
   token = localStorage.getItem("token")
   if(token != undefined)
   {
-    axios.post("http://localhost:5000/auth",{token}).then(res =>{
+    axios.post("http://localhost:50000/auth",{token}).then(res =>{
     }).catch(err =>{
         window.location.href = "index.html";
     })
@@ -83,7 +83,7 @@ if (arruma_data[1] == 12) {
   mes = "Dezembro";
 }
 axios
-  .get("http://localhost:5000/agendamentos/" + data.date + "/" + data.sede,axiosConfig)
+  .get("http://localhost:50000/agendamentos/" + data.date + "/" + data.sede,axiosConfig)
   .then((response) => {
     var agendamentos = response.data;
     var livres = 0;
@@ -98,7 +98,7 @@ axios
       <div class="row mb-2 calendario-inicial">
       <div class="col-md-6 mb-2 sede" id="vaga">
         <div
-          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative sedes">
           <div class="col-auto d-none d-lg-block ">
           <div class="imagem-sede">
             <img src='img/SP.png'  >
@@ -106,10 +106,10 @@ axios
 
           </div>
           <div class="col p-4 d-flex flex-column position-static">
-            <h1 class="mb-5">São Paulo</h1>
+            <h1 class="mb-5 nome_sede">São Paulo</h1>
             <table>
                 <tr>
-                    <td><img src='img/user.png' class='user'/></td>
+                    <td><i class="far fa-user  fa-2x"></td>
                     <td>        </td>
                     <td>        </td>
                     <td> <h4 class="card-text mb-auto">${
@@ -120,7 +120,7 @@ axios
           </div>
 
         </div>
-        <table>
+        <table class="dados">
           <tr>
             <td><img src='img/calendario.png' /></td>
             <td> </td>
@@ -132,7 +132,7 @@ axios
 
         </table>
         <br>
-        <table>
+        <table class="dados">
           <tr>
             <td><img src='img/relogio.png' /></td>
             <td> </td>
@@ -148,7 +148,7 @@ axios
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.3571828787276!2d-46.66357918502235!3d-23.555611884685714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce582d7a8f2451%3A0x2df5a2e09a20b779!2sR.%20Bela%20Cintra%2C%20986%20-%202%C2%BA%20andar%20-%20Consola%C3%A7%C3%A3o%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001415-002!5e0!3m2!1spt-BR!2sbr!4v1631675948201!5m2!1spt-BR!2sbr"
           class="mapa" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         <br><br>
-        <p><b>Endereço:</b></p>
+        <p class="dados"><b>Endereço:</b></p>
         <p>Rua Bela Cintra, 986 - 2º andar Consolação, São Paulo - SP</p>
       </div>
     </div>
@@ -166,19 +166,19 @@ axios
       <div class="row mb-2 calendario-inicial">
       <div class="col-md-6 mb-3 sede" id="vaga">
         <div
-          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-          <div class="col-auto d-none d-lg-block">
+          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative sedes">
+          <div class="col-auto d-none d-lg-block ">
           <div class="imagem-sede">
              <img src='img/SANTOS.png' >
           </div>
 
           </div>
           <div class="col p-4 d-flex flex-column position-static">
-            <h1 class="mb-5">Santos</h1>
+            <h1 class="mb-5 nome_sedes">Santos</h1>
 
             <table>
                 <tr>
-                    <td><img src='img/user.png' class='user'/></td>
+                    <td><i class="far fa-user "></td>
                     <td>        </td>
                     <td>        </td>
                     <td> <h4 class="card-text mb-auto">${
@@ -190,7 +190,7 @@ axios
 
         </div>
 
-        <table>
+        <table class="dados">
           <tr>
             <td><img src='img/calendario.png' /></td>
             <td>        </td>
@@ -202,7 +202,7 @@ axios
 
         </table>
         <br>
-        <table>
+        <table class="dados">
           <tr>
             <td><img src='img/relogio.png' /></td>
             <td>        </td>
@@ -221,7 +221,7 @@ axios
           class="mapa" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
         <br><br>
-        <p><b>Endereço:</b></p>
+        <p class="dados"><b>Endereço:</b></p>
         <p>Praça Dos Expedicionários, 19 2º andar Gonzaga, Santos - SP</p>
       </div>
     </div>
@@ -248,11 +248,10 @@ axios
         entrada: data.entrada,
         saida: data.saida
     }
-    alert(dados.id)
     axios
-    .post("http://localhost:5000/agendamentos/",dados,axiosConfig )
+    .post("http://localhost:50000/agendamentos/",dados,axiosConfig )
     .then((response) => {
-        window.location.href = `concluido.html?status=${response.status}`;
+        window.location.href = `concluido.html?status=${response.status}&sede=${data.sede}`;
     }).catch(err=>{
         window.location.href = `concluido.html?status=${err.response.status}`;
     })

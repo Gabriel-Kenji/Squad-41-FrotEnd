@@ -3,7 +3,7 @@ if(session != undefined){
   token = localStorage.getItem("token")
   if(token != undefined)
   {
-    axios.post("http://localhost:5000/auth",{token}).then(res =>{
+    axios.post("http://localhost:50000/auth",{token}).then(res =>{
         
     }).catch(err =>{
         window.location.href = "index.html";
@@ -22,7 +22,7 @@ var axiosConfig = {
     }
   }
 
-axios.get("http://localhost:5000/users/" + session,axiosConfig ).then(res =>{
+axios.get("http://localhost:50000/users/" + session,axiosConfig ).then(res =>{
     nome.innerHTML = res.data.name
 }).catch(err =>{
 })

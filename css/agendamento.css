@@ -147,7 +147,7 @@ table{
   height: 60px;
   color: #fff;
   border: 0;
-  background: #404B5A;
+  background: #36357E;
   border-radius: 10px;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -155,7 +155,7 @@ table{
 }
 
 .botao_avancar button:hover{
-  background: #394250;
+  background: #2e2d69;
 }
 
 
@@ -191,8 +191,10 @@ table{
   /* identical to box height */
   
   text-align: center;
-  background: #CCD2DB;
+  background: 
+  #36357E;
   border-radius: 10px;
+  color: #fff;
 }
 
 .horarios{
@@ -208,9 +210,10 @@ table{
   width: 340px;
   height: 140px;
   margin:  0 auto;
-  background: #CCD2DB;
+  background: #fff;
   border-radius: 10px;
   text-align: center;
+  border: #36357E solid 2px;
 
   font-style: normal;
   font-weight: 500;
@@ -222,8 +225,11 @@ table{
 
 .ocupacao{
   margin-top: 30px;
+  
 }
-
+.num{
+  color: #FE551A
+}
 .Entrada{
   padding-left: 100px;
 }

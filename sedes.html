@@ -13,14 +13,14 @@
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/sede.css">
     <!-- <link rel="stylesheet" href="css/confirmacao.css" /> -->
-
+    <script src="https://kit.fontawesome.com/b32b4293bb.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <nav class="navbar ">
         <div class="container">
-            <a>
-                Bem vindo(a),<br><b><div  id="nome"></div></b>
+            <a href="listaagendamentos.html" class="nomes">
+                Bem vindo(a),<br><b><div class="nome"  id="nome"></div></b>
             </a>
             <a href="logout.html">
                 <img alt="" src="img/Sair.png" className="d-inline-block align-top " />
@@ -42,7 +42,7 @@
             <div class="col-md-6 mb-2 sede" id="vaga">
                 <a href="agendamento.html?sede=1">
                 <div
-                    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative sedes">
                     <div class="col-auto  d-lg-block ">
                         <div class="imagem-sede">
                             <img src='img/SP.png'>
@@ -50,10 +50,10 @@
 
                     </div>
                     <div class="col p-4 d-flex flex-column position-static">
-                        <h1 class="mb-5">São Paulo</h1>
+                        <h1 class="mb-5 nome_sede">São Paulo</h1>
                         <table>
                             <tr>
-                                <td><img src='img/user.png' class='user' /></td>
+                                <td><i class="far fa-user  fa-2x"></i></td>
                                 <td> </td>
                                 <td> </td>
                                 <td>
@@ -73,7 +73,7 @@
             <div class="col-md-6 sede" id="vaga">
                 <a href="agendamento.html?sede=2">
                 <div
-                    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative sedes">
                     <div class="col-auto  d-lg-block ">
                         <div class="imagem-sede">
                             <img src='img/SANTOS.png'>
@@ -81,10 +81,10 @@
 
                     </div>
                     <div class="col p-4 d-flex flex-column position-static">
-                        <h1 class="mb-5">Santos</h1>
+                        <h1 class="mb-5 nome_sede">Santos</h1>
                         <table>
                             <tr>
-                                <td><img src='img/user.png' class='user' /></td>
+                                <td><i class="far fa-user fa-2x"></i></td>
                                 <td> </td>
                                 <td> </td>
                                 <td>

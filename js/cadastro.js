@@ -8,7 +8,7 @@ function Cadastro(){
 
     var erro =  document.getElementById("erro")
 
-    axios.post("http://localhost:5000/users",{email,password,name}).then(res =>{
+    axios.post("http://localhost:50000/users",{email,password,name}).then(res =>{
         sessionStorage.setItem('cadastro', 1);
         window.location.href = "index.html";
     }).catch(err =>{
