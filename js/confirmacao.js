@@ -16,6 +16,12 @@ if(session != undefined){
 }
 
 
+var axiosConfig = {
+  headers: {
+      Authorization: "Bearer " + localStorage.getItem("token")
+  }
+}
+
 
 var query = location.search.slice(1);
 var partes = query.split("&");
@@ -77,7 +83,7 @@ if (arruma_data[1] == 12) {
   mes = "Dezembro";
 }
 axios
-  .get("http://localhost:5000/agendamentos/" + data.date + "/" + data.sede)
+  .get("http://localhost:5000/agendamentos/" + data.date + "/" + data.sede,axiosConfig)
   .then((response) => {
     var agendamentos = response.data;
     var livres = 0;
@@ -244,7 +250,7 @@ axios
     }
     alert(dados.id)
     axios
-    .post("http://localhost:5000/agendamentos/",dados )
+    .post("http://localhost:5000/agendamentos/",dados,axiosConfig )
     .then((response) => {
         window.location.href = `concluido.html?status=${response.status}`;
     }).catch(err=>{

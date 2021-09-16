@@ -17,7 +17,11 @@ if(session != undefined){
 
 
 
-
+var axiosConfig = {
+  headers: {
+      Authorization: "Bearer " + localStorage.getItem("token")
+  }
+}
 
 
 
@@ -70,7 +74,7 @@ function DIA(data,sede) {
                       <img src="img/loading-buffering.gif" alt="">
                     </div>`;
   axios
-    .get("http://localhost:5000/agendamentos/"+data+"/"+ sede )
+    .get("http://localhost:5000/agendamentos/"+data+"/"+ sede ,axiosConfig)
     .then((response) => {
       var agendamentos = response.data;
       

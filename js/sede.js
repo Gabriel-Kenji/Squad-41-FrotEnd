@@ -16,8 +16,13 @@ if(session != undefined){
   window.location.href = "index.html";
 }
 nome = document.getElementById("nome")
+var axiosConfig = {
+    headers: {
+        Authorization: "Bearer " + localStorage.getItem("token")
+    }
+  }
 
-axios.get("http://localhost:5000/users/" + session ).then(res =>{
+axios.get("http://localhost:5000/users/" + session,axiosConfig ).then(res =>{
     nome.innerHTML = res.data.name
 }).catch(err =>{
 })
