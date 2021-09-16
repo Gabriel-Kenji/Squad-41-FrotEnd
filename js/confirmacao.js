@@ -76,14 +76,22 @@ axios
           class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
           <div class="col-auto d-none d-lg-block ">
           <div class="imagem-sede">
+            <img src='img/SP.png'  >
           </div>
 
           </div>
           <div class="col p-4 d-flex flex-column position-static">
             <h1 class="mb-5">São Paulo</h1>
-            <h4 class="card-text mb-auto">${
-              agendamentos.quant - livres
-              }/${agendamentos.quant}</h4>
+            <table>
+                <tr>
+                    <td><img src='img/user.png' class='user'/></td>
+                    <td>        </td>
+                    <td>        </td>
+                    <td> <h4 class="card-text mb-auto">${
+                        agendamentos.quant - livres
+                        }/${agendamentos.quant}</h4></td>
+                </tr>
+            </table>
           </div>
 
         </div>
@@ -136,14 +144,23 @@ axios
           class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
           <div class="col-auto d-none d-lg-block">
           <div class="imagem-sede">
+             <img src='img/SANTOS.png' >
           </div>
 
           </div>
           <div class="col p-4 d-flex flex-column position-static">
             <h1 class="mb-5">Santos</h1>
-            <h4 class="card-text mb-auto">${
-              agendamentos.quant - livres
-              }/${agendamentos.quant}</h4>
+
+            <table>
+                <tr>
+                    <td><img src='img/user.png' class='user'/></td>
+                    <td>        </td>
+                    <td>        </td>
+                    <td> <h4 class="card-text mb-auto">${
+                        agendamentos.quant - livres
+                        }/${agendamentos.quant}</h4></td>
+                </tr>
+            </table>
           </div>
 
         </div>
@@ -202,7 +219,7 @@ axios
     dados = {
         id: 4,
         date: data.date,
-        estacaoId:1,
+        estacaoId: data.estacoes,
         entrada: data.entrada,
         saida: data.saida
     }

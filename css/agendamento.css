@@ -242,7 +242,10 @@ table{
   width: 100%;
   margin-top: 20px;
 }
-
+.estacoes{
+  width: 100%;
+  font-size: 20px;
+}
 
 @media (max-width: 1024px) {
 

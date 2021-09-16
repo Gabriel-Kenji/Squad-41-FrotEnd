@@ -16,10 +16,16 @@
 }
 
 .imagem-sede{
-    background-color: #55595c;
+    background-color: #55595c; 
     width: 200px; 
     height:  250px;
     color: #fff;
+}
+
+.imagem-sede img{
+    width: 200px; 
+    height:  250px;
+
 }
 
 .botao_avancar button{
@@ -38,7 +44,13 @@
   
   .botao_avancar button:hover{
     background: #394250;
+
   }
+.user{
+    width: 18px;
+    margin-right: 0;
+    padding-left: 0;
+}
 
 
 @media (max-width: 1024px) {

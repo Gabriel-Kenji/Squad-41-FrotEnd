@@ -93,7 +93,18 @@ function DIA(data,sede) {
         agendar = true;
       }
 
-      
+      est = ""
+      select = false
+      agendamentos.estaco.forEach(estacoes => {
+        if(!select){
+          est = `<select class="form-control horario-button" name="estacoes" onfocus='this.size=3;' onblur='this.size=1;' onchange='this.size=1; this.blur();'>`
+        }
+        select = true
+        est = est + `<option value="${estacoes.id}">${estacoes.number}</option>`
+      });
+      if(select){
+        est = est + "</select>"
+      }
       
       
       if (agendar) {
@@ -182,8 +193,9 @@ function DIA(data,sede) {
               </div>
             </div>
             <div class="erro" id="erro">  </div>
-           
+            <div class="estacoes" ><p><b>Selecione uma estação de trabalho:</b></p> ${est} </div>
           </div>
+          
           
           </div>
         </form>
