@@ -18,7 +18,7 @@ if(data.status == 403){
     <h2 class="erro">Erro no<br>  Agendamento</h2>
     <br>
     <h4>Você já <b>agendou</b><br> um estação para este dia<br> </h4>
-    <a href="teste_agendamento.html" class="ok mt-4"><button>OK</button>   </a>`
+    <a href="sedes.html" class="ok mt-4"><button>OK</button>   </a>`
 }
 
 
@@ -30,7 +30,7 @@ if(data.status == 200){
     <h2>Agendamento <br> concluído com<br> sucesso</h2>
     <br>
     <h4>Esperamos você em nosso <br> escritório de <br> <b>São Paulo</b> </h4>
-    <a href="teste_agendamento.html" class="ok mt-4"><button>OK</button>   </a>`
+    <a href="sedes.html" class="ok mt-4"><button>OK</button>   </a>`
 }
 
 
@@ -42,5 +42,5 @@ if(data.status == 406){
     <h2 class="erro">Erro no<br>  Agendamento</h2>
     <br>
     <h4>A estação escolhida já<br> está <b>agendada</b>   </h4>
-    <a href="teste_agendamento.html" class="ok mt-4"><button>OK</button>   </a>`
+    <a href="sedes.html" class="ok mt-4"><button>OK</button>   </a>`
 }

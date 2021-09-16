@@ -63,6 +63,10 @@ form .input-field:first-child {
     margin-bottom: 1.5rem;
 }
 
+form img{
+    width: 7px;
+}
+
 .input-field .underline::before {
     content: '';
     position: absolute;

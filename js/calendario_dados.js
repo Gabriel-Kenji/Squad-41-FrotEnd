@@ -10,10 +10,10 @@ function Agendar() {
   h1 = hr1.split("h");
   h2 = hr2.split("h");
 
-
-if(h1[0]<=h2[0]){
-  if(h1[0] == h2[0]){
-    if(h1[1] < h2[1]){
+ 
+if(parseInt(h1[0]) <=parseInt(h2[0]) ){
+  if(parseInt(h1[0]) == parseInt(h2[0])){
+    if(parseInt(h1[1]) < parseInt(h2[1])){
       var form = document.getElementById("dados");
 
   
@@ -29,6 +29,8 @@ if(h1[0]<=h2[0]){
   
     form.submit();
   }
+  var error = document.getElementById("erro")
+
 }else{
   var error = document.getElementById("erro")
 
@@ -139,7 +141,6 @@ function DIA(data,sede) {
             <div class="col-md-6  Entrada">
               <h5>Entrada</h5>
               
-              <input type="hidden" name="id" id="id" value="3" >
               <input type="hidden" name="date" id="date" value=${data}>
               <input type="hidden" name="sede" id="date" value=${sede}>
               
