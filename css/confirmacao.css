@@ -1,0 +1,116 @@
+.mapa{
+    width: 495px ;
+    height: 353px;
+}
+
+.confirmacao-inicial{
+    margin-top: 100px;
+}
+
+.sede{
+    margin-top: 30px;
+}
+
+.botao_avancar{
+    text-align: center;
+}
+
+.imagem-sede{
+    background-color: #55595c; 
+    width: 200px; 
+    height:  250px;
+    color: #fff;
+}
+
+.imagem-sede img{
+    width: 200px; 
+    height:  250px;
+
+}
+
+.botao_avancar button{
+    /* width: 160px;
+    height: 60px; */
+    width: 285px;
+    height: 48px;
+    color: #fff;
+    border: 0;
+    background: #36357E;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    transition: 0.3s;
+  }
+  
+  .botao_avancar button:hover{
+    background: #2e2d69;
+
+  }
+.user{
+    width: 18px;
+    margin-right: 0;
+    padding-left: 0;
+}
+
+.loading{
+    text-align: center;
+}
+
+
+.sedes{
+    background-color: #36357E;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.nome_sede{
+    color: #FE551A;
+}
+
+.dados{
+    color: #36357E;
+}
+
+
+@media (max-width: 1024px) {
+    .mapa{
+        width: 380px ;
+        height: 220px;
+    }
+
+}
+@media (max-width: 952px) {
+  
+}
+
+@media (max-width: 858px) {
+
+}
+
+@media (max-width: 768px) {
+    .mapa-inicial{
+        text-align: center;
+    }
+  
+}
+
+@media (max-width: 575px) {
+  
+}
+
+@media (max-width: 475px) {
+    .mapa{
+        width: 280px ;
+        height: 220px;
+    }
+}
+
+@media (max-width: 360px) {
+
+
+.mapa{
+    width: 280px ;
+    height: 220px;
+}
+  
+}
